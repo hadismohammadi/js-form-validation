@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "BIZ UDPGothic", sans-serif;
+  background-color: #dbdde8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body h1,
+body p,
+body div,
+body button {
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  transition: all ease 0.2s;
+  text-decoration: none;
+}
+
+body button {
+  height: 40px;
+  background: #ea4c89;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  width: 100%;
+}
+
+body button:hover {
+  background: #f082ac;
+}
+
+body form {
+  width: 400px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body form input {
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #bbbfdb;
+  transition: all ease 0.2s;
+  padding: 0 15px;
+}
+
+body form input:focus-within {
+  border-color: #55586a;
+}
+
+body form h1 {
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+
+body form .form-control {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+body form .form-control label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+body form .form-control .error-message {
+  font-size: 11px;
+  color: #ff0000;
+  position: absolute;
+  bottom: -17px;
+  font-weight: 900;
+  transition: all ease 0.2s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body form .form-control.error .error-message {
+  visibility: visible;
+  opacity: 1;
+}
+
+body form .form-control.error input {
+  border-color: #ff0000;
+}
+
+body form .form-control.success input {
+  border-color: #59d151;
+}

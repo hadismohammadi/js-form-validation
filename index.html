@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset password</title>
+
+    <link rel="stylesheet" href="./css/styles.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="cantainer">
+      <form id="form">
+        <h1>Reset Password</h1>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            onchange="handleChangePassInput()"
+          />
+          <small id="password-error" class="error-message"
+            >error messeage</small
+          >
+        </div>
+
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            onchange="handleChangeConfirmPassInput()"
+          />
+          <small id="confirm-password-error" class="error-message"
+            >error messeage</small
+          >
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="js/master.js"></script>
+  </body>
+</html>
